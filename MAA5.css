@@ -1,0 +1,258 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+
+html,body, #main{
+    height:100%;
+    width:100%;
+    /* background-image: url("Bgimg2.jpg"); */
+    background-size: cover;
+    background-color:darkgrey;
+}
+
+#Header{
+    height:30%;
+    background-color: lightgray;
+    background-image:url("Black_Deck2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position:fixed;
+    background-position: center;
+    width:100%;
+    z-index:10;
+}
+
+#FHeader{
+    background-image:url("Black_Deck2.jpg");
+    height:30%;
+    width:100%;
+}
+
+#LogoArea{
+    height:25%;
+    position:fixed;
+    font-size:60px;
+    margin-top:50px;
+    margin-left:320px;
+    color:white;
+    font-weight: bold;
+    text-shadow: 2px -2px aqua;
+    animation: fromleft 2s ease-out 1 forwards;
+}
+
+@keyframes fromleft{
+    0%{
+        visibility: hidden;
+        margin-left:0px;
+    }
+    100%{
+        visibility: visible;
+        margin-left:320px;
+    }
+}
+
+#NavBar{
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+    position:fixed;
+    transform: translateX(245px) translateY(85px);
+    z-index:15;
+}
+
+.Tabs{
+    z-index:15;
+    font-size:large;
+    text-align:center;
+    padding-top:20px;
+    width: 150px;
+    height:45px;
+    font-weight: bold;
+    text-shadow: 1px -2px blue ;
+    color:aqua;
+    border: 2px solid black;
+    border-bottom: 0px;
+    background-color:darkgrey;
+}
+
+#line{
+    z-index:0;
+    transform:translateY(180px);
+    width: 100%;
+    border: 3px solid black;
+}
+
+#Page1{
+    height:100%;
+    width:100%;
+    display:flex;
+}
+
+#sidebar {
+    
+    height: 70%;
+    width: 19.6%;
+    background-color: black;
+    position:fixed;
+    transition: width 1s ease, border-radius 1s ease; 
+}
+
+#sidebar:hover{
+    width: 25.5%; 
+    border-top-right-radius: 20%; 
+    border-bottom-right-radius: 20%; 
+}
+
+#Content{
+    transform: translateX(248px);
+    position:relative;
+    margin-top:50px;
+    margin-left:70px;
+    height: 250%;
+    width:50%;
+    border: 4px solid black;
+}
+
+#Text{
+    
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    width: 95%;
+    margin-left:15px;
+    margin-top:40px;
+    /* background-color: antiquewhite; */
+}
+
+.Tabs:hover{
+    background-color: gray;
+}
+
+#stext{
+    color: white;
+    margin-top:40px;
+    margin-bottom:30px;
+    position:fixed;
+    height: 63%;
+    width:180px;
+    margin-left: 20px;
+    transition: width 1s ease, border-radius 1s ease;
+    
+}
+
+#stext:hover{
+    overflow:scroll;
+    scrollbar-width: none;
+    width: 250px;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+} 
+
+.SQ{
+    background-color: black;
+    margin-top:70px;
+    margin-bottom:30px;
+    margin-left:20px;
+    width:100%;
+    font-size:23px;
+}
+
+.SQ, a:visited{
+    color: white;
+}
+
+.SQ:hover{
+    background-color:grey;
+}
+
+#Contact{
+    /* transform: translateX(1015px); */
+    margin-left:1015px;
+    right:0%;
+    height: 70%;
+    width: 19.3%;
+    background-color: black;
+    position:fixed;
+    z-index:1;
+    transition: margin 1s ease, width 1s ease, border-radius 1s ease;  
+}
+
+#Contact:hover{
+    margin-left: 900px;
+    width: 24.4%; 
+    border-top-left-radius: 20%; 
+    border-bottom-left-radius: 20%; 
+
+}
+
+#Ctext{
+    width:85%;
+    height:90%;
+    margin-top:30px;
+    margin-left:30px;
+    /* border: 2px solid white; */
+    /* background-color: white; */
+    position:absolute;
+    transition: border-radius 1s ease;
+    right:0%;
+    z-index: 2;
+    overflow-y: hidden;
+    
+}
+
+#Ctext:hover{
+    overflow-y: auto;
+    scrollbar-width: none;
+    border-top-left-radius:20%;
+    border-bottom-left-radius:20%;
+}
+
+.CH{
+    margin-top:20px;
+    margin-left: 15px;
+    color: white;
+    font-size:25px;
+}
+
+.SH{
+    margin-top:30px;
+    margin-left: 65px;
+    color: white;
+    font-size:20px;
+}
+
+.Info, a{
+    color: white;
+}
+
+.Info{
+    margin-top:10px;
+    margin-left: 55px;
+    color: white;
+    font-size:15px;
+}
+
+#Reviews{
+    background-color: gray;
+}
+
+#Heading{
+    border: 5px solid black;
+    font-size:38px;
+    text-align:center;
+    font-family:serif;
+    font-weight:bolder;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    margin-bottom:90px;
+    letter-spacing:5px;
+}
+
+.Section{
+    border: 2px solid red;
+    height: 10%;
+    color: white;
+    margin-top:50px;
+}
